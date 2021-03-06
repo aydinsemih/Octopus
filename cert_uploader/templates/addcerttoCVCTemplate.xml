@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Body>
+		<dp:request domain="ZULAZULADOMAINNAMEZULA"
+			xmlns:dp="http://www.datapower.com/schemas/management">
+			<dp:modify-config>	
+			<!--	ATTENTION!!!		
+				CryptoValCred CONTENT SHOULD BE PASTE HERE AS BELOW SAMPLE. 
+				CryptoValCred CONTENT can be obtained from the exported file. 
+				The name of the exported CVC config file on last run is: ZULAZULACVCEXPORTFILEZULAZULA
+			
+			-->
+			<!--
+				<CryptoValCred name="CVC_clienttoDP"
+					xmlns:env="http://www.w3.org/2003/05/soap-envelope">
+					<mAdminState>enabled</mAdminState>
+					<Certificate class="CryptoCertificate">TestServer</Certificate>
+					<Certificate class="CryptoCertificate">testsoma1</Certificate>
+					<CertValidationMode>legacy</CertValidationMode>
+					<UseCRL>on</UseCRL>
+					<RequireCRL>off</RequireCRL>
+					<CRLDPHandling>ignore</CRLDPHandling>
+					<InitialPolicySet>2.5.29.32.0</InitialPolicySet>
+					<ExplicitPolicy>off</ExplicitPolicy>
+					<CheckDates>on</CheckDates>
+				</CryptoValCred>
+				-->
+			</dp:modify-config>
+		</dp:request>
+	</soapenv:Body>
+</soapenv:Envelope>
